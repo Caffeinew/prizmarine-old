@@ -1,0 +1,41 @@
+.menu-btn {
+  align-self: center;
+  cursor: pointer;
+  width: max(60px, 3vw);
+  height: max(60px, 3vw);
+  grid-area: c;
+}
+.icon-hamburger {
+  flex-direction: column;
+  justify-content: space-between;
+  width: max(24px, 1.2vw);
+  height: max(24px, 1.2vw);
+  transition: all 0.4s ease;
+}
+.menu-btn-line {
+  width: 100%;
+  height: max(4px, 0.2vw);
+  background-color: #333;
+  transition: all 0.4s ease;
+}
+.menu-btn-line:nth-child(1) {
+  transition: all 0.4s ease;
+  transform-origin: right center;
+}
+.menu-btn-line:nth-child(3) {
+  transition: all 0.4s ease;
+  transform-origin: left center;
+}
+.menu-btn.active .icon-hamburger {
+  transform: rotate(-45deg);
+}
+.menu-btn.active .menu-btn-line:nth-child(1) {
+  width: 50%;
+  transform: rotate(270deg) translateY(min(-6px, -0.3vw))
+    translateX(max(2px, 0.1vw));
+}
+.menu-btn.active .menu-btn-line:nth-child(3) {
+  width: 50%;
+  transform: rotate(270deg) translateY(max(6px, 0.3vw))
+    translateX(min(-2px, -0.1vw));
+}

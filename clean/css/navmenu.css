@@ -1,0 +1,86 @@
+header {
+  z-index: 10;
+  position: absolute;
+  justify-items: center;
+  user-select: none;
+  margin-top: 5vmin;
+  padding: 0 12.5vw;
+  width: 100%;
+  display: grid;
+  height: 100vmax;
+  max-height: max(60px, 3vw);
+  overflow: hidden;
+  grid-template-areas: "a b c";
+  grid-template-columns: max(96px, 5vw) 1fr max(96px, 5vw);
+  transition: max-height 0.5s;
+  background-color: transparent;
+}
+.logo {
+  grid-area: a;
+  font-size: max(30px, 1.5vw);
+}
+.collapse {
+  width: 100%;
+  grid-area: b;
+  display: none;
+}
+.collapse span {
+  opacity: 0;
+  cursor: pointer;
+  width: max(96px, 5vw);
+  font-size: max(18px, 0.9vw);
+}
+.collapse .disabled {
+  color: #888;
+}
+
+.collapse span:nth-child(1) {
+  animation: fold 401ms ease-in-out forwards;
+}
+.collapse .animated:nth-child(1) {
+  animation: drop 100ms  100ms ease-in-out forwards;
+}
+.collapse span:nth-child(2) {
+  animation: fold 241ms ease-in-out forwards;
+}
+.collapse .animated:nth-child(2) {
+  animation: drop 200ms  100ms ease-in-out forwards;
+}
+.collapse span:nth-child(3) {
+  animation: fold 161ms ease-in-out forwards;
+}
+.collapse .animated:nth-child(3) {
+  animation: drop 300ms  100ms ease-in-out forwards;
+}
+.collapse span:nth-child(4) {
+  animation: fold 81ms ease-in-out forwards;
+}
+.collapse .animated:nth-child(4) {
+  animation: drop 400ms  100ms ease-in-out forwards;
+}
+.collapse span:nth-child(5) {
+  animation: fold 1ms ease-in-out forwards;
+}
+.collapse .animated:nth-child(5) {
+  animation: drop 500ms  100ms ease-in-out forwards;
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fold {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}

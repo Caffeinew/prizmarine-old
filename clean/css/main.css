@@ -1,0 +1,7 @@
+main img {
+    margin-top: calc(max(60px, 3vw) + 5vmin);
+    width: 60vmax;
+    margin-left: 9vw;
+    position: relative;
+    shape-outside: polygon(0 0, 75% 0, 75% 55%, 100% 55%, 100% 100%, 0 100%);
+}

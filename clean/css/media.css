@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1280px) {
+  .stripes {
+    display: none;
+  }
+  header {
+    grid-template-areas:
+      "c a"
+      "b b";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max(60px, 3vw) 1fr;
+    padding: 0;
+    justify-items: flex-start;
+    background-color: #fff;
+  }
+  header.active {
+    max-height: 100vmax;
+  }
+  header.active + main {
+    overflow: hidden;
+  }
+  .collapse {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10vw 0 0 15vw;
+  }
+  .collapse span {
+    width: 70%;
+    justify-content: flex-start;
+    font-size: max(20px, 1vw);
+    margin: max(5px, 0.25vw) 0;
+    border-bottom: max(1px, 0.1vw) solid #eee;
+    padding: 0 0 max(10px, 0.5vw) max(5px, 0.25vw);
+  }
+  .logo {
+    justify-self: flex-end;
+    margin-right: 5vw;
+  }
+  .menu-btn {
+    margin-left: 5vw;
+  }
+  main img {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}

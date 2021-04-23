@@ -1,0 +1,238 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Призмарин - Разработка сайтов. Создание графического и веб дизайна, SMM, продвижение в социальных сетях, брендирование">
+   <link rel="stylesheet" href="./css/index.css">
+   <title>Prizmarine - digital agency</title>
+   <style>
+       @font-face {
+	        font-family: primary;
+	        src: url(./assets/fonts/Nagonia.otf)
+        }
+        @font-face {
+	        font-family: logo;
+	        src: url(./assets/fonts/msyi.ttf)
+        }
+        @font-face {
+            font-family: 'icomoon';
+            src: url('./assets/fonts/icomoon.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+         }
+         .grecaptcha-badge {
+
+         }
+   </style>
+</head>
+<body>
+   <div class="modal-container">
+      <div class="modal">
+         <header>
+            <div class="lines"></div>
+            <div class="accent"></div>
+         </header>
+         <form id="requestForm" class="flex">
+            <h1>Оставить Заявку</h1>
+            <input name="name" required type="text" placeholder="С кем будем работать ?">
+            <input name="email" required type="email" placeholder="Контактный E-mail">
+            <input name="phone" type="text" placeholder="Номер телефона"> 
+            <textarea name="body" placeholder="Нам нужно это знать ?"></textarea>
+            <button class="g-recaptcha" data-sitekey="6LddrnEaAAAAAAeV8Jfz5MmLwzqWtbhvxi0BTE11" data-callback='onSubmit' data-action='submit'>Вперед !</button> 
+         </form>
+      </div>
+   </div>
+   <div class="stripes flex">
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+   </div>
+   <section id="main">
+      <header class="flex">
+         <span class="logo flex">Prizm</span> 
+         <div class="nav-collapse-content flex"> <a class="nav-link flex" href="">проекты</a> <a class="nav-link flex" href="">услуги</a> <a class="nav-link flex disabled" href="">отзывы</a> <a class="nav-link flex" href="">клиенты</a> <a class="nav-link flex" href="">контакты</a> </div>
+         <a class="nav-menu flex" href="">Меню</a> 
+      </header>
+      <div class="content">
+         <img src="./assets/Z-hd.webp" class="over" id="z-hd">
+         <img src="./assets/Z-fhd.webp" class="over" id="z-fhd">
+         <img src="./assets/Z-uhd.webp" class="over" id="z-uhd">
+         <img src="./assets/Z-qhd.webp" class="over" id="z-qhd">
+         <div class="kp">
+            <p>МЫ РАЗРАБАТЫВАЕМ И<br>СОЗДАЁМ<br>КРЕАТИВНЫЙ ПРОДУКТ</p>
+            <a href="" class="over">Узнать больше</a> 
+         </div>
+      </div>
+   </section>
+   <section id="projects-and-phone" class="flex">
+      <header>
+         <div class="lines"></div>
+         <div class="accent"></div>
+      </header>
+      <div class="slider-and-projects scroll">
+         <div class="slider-1-container">
+            <h1>Факты:</h1>
+            <div class="slider-1">
+               <div>
+                  <h2>Гарантируем возврат средств</h2>
+                  <h3>Возможно даже денежных</h3>
+               </div>
+               <div>2</div>
+               <div>3</div>
+            </div>
+         </div>
+         <div class="projects">
+            <h1>Наши Проекты</h1>
+            <div class="projects-inner">
+               <div class="project open">
+                  <img src="./assets/projects/peshka.webp" alt="" class="project-img"> 
+                  <div class="project-desc flex"> Hello world </div>
+               </div>
+               <div class="project">
+                  <img src="./assets/projects/peshka2.webp" alt="" class="project-img"> 
+                  <div class="project-desc flex"></div>
+               </div>
+               <div class="project">
+                  <img src="./assets/projects/peshka3.webp" alt="" class="project-img"> 
+                  <div class="project-desc flex"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section id="services-and-feedback">
+      <h1>Предложения</h1>
+      <div class="services flex scroll">
+         <div class="service-block over open">
+            <img src="./assets/services/1pat.svg" alt="Сайт"> 
+            <h5>Сайт</h5>
+            <div class="hidden active">
+               <p>Возможность заявить о себе громко, главный инструмент для этого - индивидуальный сайт</p>
+               <p>Как этот, только не этот</p>
+               <h5>Сайт</h5>
+            </div>
+         </div>
+         <div class="service-block over">
+            <img src="./assets/services/2pat.svg" alt="Реклама"> 
+            <h5>Реклама</h5>
+            <div class="hidden">
+               <p>Продуманная рекламная стратегия вместе с большим набором инструментов для продвижения на первые ряды поисковых запросов</p>
+               <p>Реклама, как реклама</p>
+               <h5>Реклама</h5>
+            </div>
+         </div>
+         <div class="service-block over">
+            <img src="./assets/services/3pat.svg" alt="Брендинг"> 
+            <h5>Брендинг</h5>
+            <div class="hidden">
+               <p>Заявите о себе громко и ярко, наша команда, на основе ваших предпочтений сформирует неповторимый стиль для вашего бренда</p>
+               <h5>Брендинг</h5>
+            </div>
+         </div>
+         <div class="service-block over">
+            <img src="./assets/services/4pat.svg" alt="Ux дизайн"> 
+            <h5>Ux дизайн</h5>
+            <div class="hidden">
+               <p>Большая выборка и правильный подбор пользователей для проверки доступности интерфейса, поможет сделать ваш продукт более удобным</p>
+               <p>Два брата Ux и Ui пришли на сайт. Но дизайнеры все перепутали...</p>
+               <h5>Ux дизайн</h5>
+            </div>
+         </div>
+         <div class="service-block over">
+            <img src="./assets/services/5pat.svg" alt="Ui дизайн"> 
+            <h5>Ui дизайн</h5>
+            <div class="hidden">
+               <p>Создаём удобные интерфейсы опираясь на опыт пользователей и ваши потребности, для создания действительно уникального продукта</p>
+               <P>Брат 2 <a href="https://premier.one/show/9759/video/bb7159e263d4efee41d0620982f12616">Смотреть онлайн</a></P>
+               <h5>Ui дизайн</h5>
+            </div>
+         </div>
+      </div>
+      <div class="feedback scroll">
+         <img src="" alt=""> 
+         <div class="feedback-block">
+            <h1>Отзывы</h1>
+         </div>
+      </div>
+   </section>
+   <section id="clients" class="scroll">
+      <div class="client over first-client">
+         <h1>Клиенты</h1>
+         <a class="fireModal flex">Свяжитесь с нами <span class="icon-chevron-right" style="margin-left: 0.5vw;font-size: max(14px, 1vw)"></span></a> 
+      </div>
+      <div class="client over active"> <img src="./assets/clients/teensmart.svg" alt="">
+         <span class="client-span">Детская школа<br>Дополнительных занятий</span>
+      </div>
+      <div class="client over"> <img src="./assets/clients/myaso_client.svg" alt="">
+         <span class="client-span">Мясной магазин</span>
+      </div>
+      <div class="client over"> <img src="./assets/clients/vasilki_client.svg" alt="">
+         <span class="client-span">Сеть магазинов<br> Белорусских продуктов</span>
+      </div>
+      <div class="client over"> <img src="" alt="">
+         <span class="client-span">Prizm</span>
+      </div>
+      <div class="client over"> <img src="" alt="">
+         <span class="client-span">Prizm</span>
+      </div>
+      <div class="client over"> <img src="" alt="">
+         <span class="client-span">Prizm</span>
+      </div>
+   </section>
+   <footer>
+      <header>
+         <div class="lines"> </div>
+         <div class="nav over">
+            <span class="logo">Prizm</span> 
+            <div> <a href="" class="nav-link">проекты</a> <a href="" class="nav-link">услуги</a> <a href="" class="nav-link disabled">отзывы</a> <a href="" class="nav-link">клиенты</a> <a href="" class="nav-link">контакты</a> </div>
+         </div>
+         <div class="accent">
+            <div>
+               <span>Есть идея ?</span> 
+               <h1>Давайте обсудим:</h1>
+            </div>
+            <a class="fireModal">Оставить заявку</a> 
+         </div>
+      </header>
+      <div id="copyright-and-social" class="flex scroll">
+         <div class="copyright">Prizmarine agency 2021</div>
+         <div class="social flex">
+            <a href=""><span class="icon-youtube-play"></span></a>
+            <a href=""><span class="icon-vk"></span></a>
+            <a href=""><span class="icon-instagram"></span></a>
+            <a href=""><span class="icon-twitter"></span></a>
+            <a href=""><span class="icon-telegram"></span></a>
+         </div>
+      </div>
+   </footer>
+   <script src="https://www.google.com/recaptcha/api.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+   <script src="./js/index.js"></script>
+   <script>
+      let slider1 = tns({
+         container: '.slider-1',
+         items: 1,
+         slideBy: 'page',
+         axis: 'vertical',
+      })
+      function onSubmit(token) {
+         fetch('./validate.php', {
+             method: 'POST',
+             body : JSON.stringify({token})
+         }).then(response => response.text()
+         ).then(text => {
+            text ? sendRequest() : alert('Ошибка Recaptha')
+         })
+      }
+      function sendRequest() {
+         let formData = new FormData(document.querySelector('#requestForm'))
+         fetch('./sendRequest.php', {
+             method: 'POST',
+             body : formData
+         }).then(response => response.text()
+         ).then(text => alert(text))
+      }
+   </script>
+</body>
+</html>
