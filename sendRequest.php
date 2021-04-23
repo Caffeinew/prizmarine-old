@@ -19,7 +19,7 @@ try {
     $mail->Host       = 'smtp.mail.ru';                  
     $mail->SMTPAuth   = true;                            
     $mail->Username   = 'tarabrin181@mail.ru';             
-    $mail->Password   = 'y3TH7fznF65GMr6';                    
+    $mail->Password   = '1234';                    
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  
     $mail->Port       = 587;                             
 
