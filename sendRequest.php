@@ -18,8 +18,8 @@ try {
     $mail->CharSet = 'UTF-8';
     $mail->Host       = 'smtp.mail.ru';                  
     $mail->SMTPAuth   = true;                            
-    $mail->Username   = 'tarabrin181@mail.ru';             
-    $mail->Password   = '1234';                    
+    $mail->Username   = ;             
+    $mail->Password   = ;                    
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  
     $mail->Port       = 587;                             
 
